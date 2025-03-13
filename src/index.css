@@ -91,12 +91,13 @@ input:focus {
 
 ul {
   text-align: left;
-  padding: 0;
+  padding: 0 20px; 
   margin: 15px 0;
 }
 
 li {
   margin-bottom: 8px;
+  list-style-position: inside;
 }
 
 p {
