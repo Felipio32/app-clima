@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Roboto', sans-serif; /* Fuente general */
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -14,8 +14,8 @@
 
 /* Estilos generales */
 body {
-  font-family: 'Poppins', sans-serif; /* Aplicar Poppins para cuerpo */
-  background-color: #87CEEB; /* Fondo azul cielo */
+  font-family: 'Poppins', sans-serif;
+  background-color: #87CEEB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,22 +24,24 @@ body {
   transition: background 0.5s ease;
   padding: 20px;
 }
+
 .container {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 12px;
   text-align: center;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .container:hover {
-  transform: scale(1.05); /* Efecto hover para agrandar */
+  transform: scale(1.05);
 }
 
 h1, h2 {
-  font-family: 'Poppins', sans-serif; /* Títulos con Poppins */
+  font-family: 'Poppins', sans-serif;
   color: #333;
   font-weight: 600;
 }
@@ -56,7 +58,7 @@ h2 {
 }
 
 button {
-  font-family: 'Roboto', sans-serif; /* Fuente Roboto para botones */
+  font-family: 'Roboto', sans-serif;
   background: #007BFF;
   color: white;
   border: none;
@@ -72,7 +74,7 @@ button:hover {
 }
 
 input {
-  font-family: 'Roboto', sans-serif; /* Fuente Roboto para inputs */
+  font-family: 'Roboto', sans-serif;
   padding: 10px;
   font-size: 1rem;
   border-radius: 5px;
@@ -86,6 +88,7 @@ input:focus {
   border-color: #007BFF;
   outline: none;
 }
+
 ul {
   text-align: left;
   padding: 0;
@@ -108,33 +111,64 @@ p {
   font-weight: 600;
 }
 
-/* Media Queries para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-  .container {
-    padding: 15px;
-    max-width: 100%;
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
   }
 
-  input[type="text"] {
-    padding: 8px;
+  .container {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
   }
 
   button {
-    padding: 8px;
+    font-size: 1rem;
+    padding: 10px 16px;
   }
 
-  .buttons {
-    flex-direction: column;
-  }
-
-  .buttons button {
-    width: 100%; /* Aseguramos que los botones de idioma y unidades se alineen verticalmente */
+  input {
+    width: 90%;
   }
 }
 
-/* Media Queries para pantallas más grandes (tablets y escritorios) */
-@media (min-width: 601px) {
-  .buttons button {
-    width: 48%; /* Botones en fila en pantallas más grandes */
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .loading {
+    font-size: 1.2rem;
   }
 }
