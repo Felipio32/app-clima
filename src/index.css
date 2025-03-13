@@ -27,13 +27,14 @@ body {
 
 .container {
   background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
   text-align: center;
   width: 100%;
   max-width: 350px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  height: 600px;
 }
 
 .container:hover {
