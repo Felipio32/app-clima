@@ -106,7 +106,7 @@ function App() {
             <button onClick={handleSearch}>Buscar</button>
           </div>
 
-          {weather ? <Weather weather={weather} /> : geoPermissionDenied && <p>You denied location access. Please search for a city.</p>}
+          {weather ? <Weather weather={weather} /> : geoPermissionDenied && <p>Negaste el acceso a la ubicación. Por favor busca por ciudad.</p>}
         </>
       )}
     </div>
